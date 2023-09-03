@@ -1,0 +1,304 @@
+/* css for elements in body */
+body {
+  line-height: 1.5 !important;
+}
+
+.nav-pills .nav-link.active {
+  color: rgb(0, 0, 0);
+  background-color: rgb(255, 204, 0) !important;
+  border-radius: 0 !important;
+}
+
+a {
+  color: black !important;
+}
+
+.fs-1 {
+  font-size: 1rem !important;
+}
+
+.vertical-line {
+  border-left: 4px solid black;
+  height: 100vh;
+}
+
+.h-line {
+  border-top: 4px solid black;
+  width: 95%;
+}
+
+.htwo-line {
+  border-top: 6px solid rgb(0, 0, 0);
+  width: 30%;
+}
+
+#sticky {
+  position: sticky !important;
+  top: 0;
+}
+
+#myimg::before {
+  content: "";
+  position: absolute;
+  width: 33%;
+  height: 40%;
+  background-color: rgb(255, 217, 1);
+  transition: transform 0.2s ease;
+}
+#myimg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#myimg img {
+  transition: transform 0.2s ease;
+}
+
+#myimg:hover::before {
+  transform: translateX(10px) translateY(10px);
+}
+
+#myimg:hover img {
+  transform: translateX(10px) translateY(10px);
+}
+
+.textt {
+  font-family: "Caveat", cursive;
+  font-family: "Rubik", sans-serif;
+  font-size: 3rem !important;
+  color: black !important;
+}
+
+#emda {
+  font-family: "Caveat", cursive;
+  font-family: "Rubik", sans-serif;
+}
+
+.center_text::before {
+  content: "";
+  position: absolute;
+  width: 10rem;
+  height: 0.3rem;
+  background-color: black;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.custom-bg-black {
+  background-color: black;
+  color: white;
+  margin: 0 !important;
+}
+
+.custom-bg-black .nav-link {
+  color: white !important;
+  padding: 0.5rem;
+}
+
+/* end css for elements in body */
+/*   ////////////////////////////////////////////////////////////////////////////////////////////////   */
+
+/*   biography section*/
+
+.firstL {
+  display: block;
+  height: 2rem;
+  width: 0.1rem;
+  background-color: black;
+}
+
+.secondL {
+  display: block;
+  height: 5rem;
+  width: 0.1rem;
+  background-color: black;
+}
+
+.firstLrev {
+  display: block;
+  height: 2rem;
+  width: 0.1rem;
+  background-color: black;
+  transform: translateY(4rem);
+}
+
+.secondLrev {
+  display: block;
+  height: 5rem;
+  width: 0.1rem;
+  background-color: black;
+  transform: translateY(1rem);
+}
+
+/* end biography section */
+/*   ////////////////////////////////////////////////////////////////////////////////////////////////   */
+
+/*   portfolio section*/
+
+.buttonYellow {
+  background-color: rgb(255, 217, 1);
+  width: fit-content;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.buttonYellow:hover {
+  color: rgb(255, 217, 1) !important;
+  background-color: white;
+  border: 3px solid rgb(255, 217, 1);
+}
+
+.opacity {
+  opacity: 0.4;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.opacity:hover {
+  opacity: 0.9;
+  transform: scale(1.05);
+}
+
+.titleCard {
+  text-decoration: underline solid 3px rgb(255, 217, 1);
+}
+
+.itemStyle {
+  background-color: rgb(237, 237, 224);
+  border: 4px solid rgb(71, 69, 69);
+  padding: 0.7rem;
+  margin-right: 1.2rem;
+  margin-top: 1.2rem;
+}
+
+#cv {
+  background-color: rgb(255, 217, 1);
+  display: block;
+  width: 20rem;
+  height: 10rem;
+  padding-top: 4rem;
+  text-decoration: none;
+  position: relative;
+}
+
+.style-sections {
+  background-color: #f2f2f2;
+  padding: 3rem;
+}
+/*    end portfolio section*/
+/*   ////////////////////////////////////////////////////////////////////////////////////////////////   */
+
+/*   services section*/
+
+.badgee {
+  position: relative;
+}
+.badgee::before {
+  content: "First";
+  position: absolute;
+  text-align: center;
+  align-items: center;
+  width: 5rem;
+  height: 4rem;
+  right: 0;
+  top: 0;
+  padding-top: 1rem;
+  background-color: rgb(255, 217, 1);
+  transform: translateX(-2.5rem);
+  font-weight: bold;
+}
+
+.badgeeTwo {
+  position: relative;
+}
+.badgeeTwo::before {
+  content: "Second";
+  position: absolute;
+  text-align: center;
+  align-items: center;
+  width: 5rem;
+  height: 4rem;
+  right: 0;
+  top: 0;
+  padding-top: 1rem;
+  background-color: rgb(255, 217, 1);
+  transform: translateX(-2.5rem);
+  font-weight: bold;
+}
+
+.badgeeThree {
+  position: relative;
+}
+.badgeeThree::before {
+  content: "Three";
+  position: absolute;
+  text-align: center;
+  align-items: center;
+  width: 5rem;
+  height: 4rem;
+  right: 0;
+  top: 0;
+  padding-top: 1rem;
+  background-color: rgb(255, 217, 1);
+  transform: translateX(-2.5rem);
+  font-weight: bold;
+}
+
+/*    end services section*/
+/*   ////////////////////////////////////////////////////////////////////////////////////////////////   */
+
+/* form section*/
+.borderNew {
+  border-radius: 0 !important;
+  border: 2px solid black !important;
+  padding: 1rem;
+}
+input::placeholder {
+  color: black !important;
+}
+
+textarea::placeholder {
+  color: black !important;
+}
+
+.submit {
+  background-color: rgb(255, 217, 1);
+  padding: 1.2rem;
+  border-radius: 0 !important;
+}
+
+.submit:hover {
+  color: rgb(255, 217, 1) !important;
+  background-color: white;
+  border: 3px solid rgb(255, 217, 1);
+}
+/*  end form section*/
+/*   ////////////////////////////////////////////////////////////////////////////////////////////////   */
+
+/* media query section*/
+@media screen and (max-width: 768px) {
+  #collapsemenu {
+    display: none;
+  }
+
+  .btncoll {
+    display: none;
+  }
+
+  .itemStyle {
+    padding: 0.3rem;
+    margin-right: 0.6rem;
+    margin-left: 0.6rem;
+    margin-top: 0.6rem;
+  }
+}
+
+@media screen and (max-width: 820px) {
+  .btncoll {
+    display: none;
+  }
+}
+/* end media query section*/
